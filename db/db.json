@@ -1,0 +1,106 @@
+{
+  "autores": [
+    {
+      "id": 1,
+      "name": "J.K. Rowling211"
+    },
+    {
+      "id": 2,
+      "name": "George R.R. Martin211"
+    },
+    {
+      "id": 3,
+      "name": "J.R.R. Tolkien211"
+    },
+    {
+      "id": 4,
+      "name": "Stephen King211"
+    },
+    {
+      "id": 5,
+      "name": "Agatha Christie211"
+    },
+    {
+      "id": 6,
+      "name": "Isaac Asimov211"
+    },
+    {
+      "id": 7,
+      "name": "Arthur C. Clarke211"
+    },
+    {
+      "id": 8,
+      "name": "Orson Scott Card211"
+    },
+    {
+      "id": 9,
+      "name": "Frank Herbert211"
+    },
+    {
+      "id": 10,
+      "name": "Philip K. Dick211"
+    }
+  ],
+  "libros": [
+    {
+      "id": 1,
+      "autorId": 5,
+      "title": "Harry Potter and the Chamber of Secrets",
+      "desc": "A thrilling adventure in the magical world of Hogwarts."
+    },
+    {
+      "id": 2,
+      "autorId": 1,
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "desc": "Harry's third year at Hogwarts, full of new challenges and mysteries."
+    },
+    {
+      "id": 3,
+      "autorId": 2,
+      "title": "A Game of Thrones",
+      "desc": "The first book in the epic fantasy series 'A Song of Ice and Fire'."
+    },
+    {
+      "id": 4,
+      "autorId": 2,
+      "title": "A Clash of Kings",
+      "desc": "The second book in the epic fantasy series 'A Song of Ice and Fire'."
+    },
+    {
+      "id": 5,
+      "autorId": 3,
+      "title": "The Hobbit",
+      "desc": "A fantasy adventure following Bilbo Baggins' quest."
+    },
+    {
+      "id": 6,
+      "autorId": 3,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "desc": "The beginning of the journey to destroy the One Ring."
+    },
+    {
+      "id": 7,
+      "autorId": 4,
+      "title": "The Shining",
+      "desc": "A chilling tale of a haunted hotel and the power of a young boy's psychic abilities."
+    },
+    {
+      "id": 8,
+      "autorId": 4,
+      "title": "It",
+      "desc": "A terrifying story of a group of friends confronting an evil entity from their childhood."
+    },
+    {
+      "id": 9,
+      "autorId": 5,
+      "title": "Murder on the Orient Express",
+      "desc": "A classic detective novel featuring Hercule Poirot."
+    },
+    {
+      "id": 10,
+      "autorId": 5,
+      "title": "And Then There Were None",
+      "desc": "Ten strangers are invited to a remote island and are killed one by one."
+    }
+  ]
+}
