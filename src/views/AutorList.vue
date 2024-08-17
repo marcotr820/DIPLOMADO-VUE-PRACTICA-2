@@ -5,21 +5,27 @@
       <span class="mx-2"></span>
       <router-link class="btn btn-link" to="/libros">Ver libros</router-link>
       <br><br>
+      <input v-model="filtroAutor" ype="text" class="form-control mb-3" placeholder="Buscar...">
+      <input id="filtroFortuna" type="checkbox" v-model="filtrarPorFortuna" /><label for="filtroFortuna">Mostrar solo
+         autores con fortuna mayor a 1,000,000</label>
+      <br><br>
       <table class="table table-bordered table-striped">
          <thead>
             <tr>
                <th>ID</th>
                <th>Nombre</th>
+               <th>Fortuna</th>
                <th>Opciones</th>
             </tr>
          </thead>
          <tbody>
-            <tr v-if="autores.length == 0">
-               <td colspan="3">Sin registros.</td>
+            <tr v-if="filtrarAutoresComputada == 0">
+               <td colspan="4">Sin registros.</td>
             </tr>
-            <tr v-for="autor in autores" :key="autor.id">
+            <tr v-for="autor in filtrarAutoresComputada" :key="autor.id">
                <td>{{ autor.id }}</td>
                <td>{{ autor.name }}</td>
+               <td>{{ autor.fortuna }}</td>
                <td>
                   <router-link class="btn btn-primary mx-2"
                      :to="{ name: 'AutorEdit', params: { id: autor.id } }">editar</router-link>
@@ -40,6 +46,8 @@ export default {
       return {
          apiUrl: process.env.VUE_APP_API_URL,
          autores: [],
+         filtroAutor: '',
+         filtrarPorFortuna: false
       }
    },
    methods: {
@@ -67,6 +75,16 @@ export default {
    },
    created() {
       this.getAutores();
+   },
+   computed: {
+      filtrarAutoresComputada() {
+         return this.autores.filter(x => {
+            const buscaPorFortuna = this.filtrarPorFortuna ? x.fortuna > 1000000 : true;
+            const buscaPorNombre = x.name.toLowerCase().includes(this.filtroAutor.toLowerCase());
+            return buscaPorFortuna && buscaPorNombre;
+         })
+            
+      }
    }
 
 }

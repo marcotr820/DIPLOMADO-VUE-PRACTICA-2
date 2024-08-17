@@ -5,9 +5,15 @@
          <div class="card-body">
             <form @submit.prevent="saveautor">
                <div class="mb-3 row">
-                  <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+                  <label for="name" class="col-sm-2 col-form-label">Nombre:</label>
                   <div class="col-sm-10">
                      <input class="form-control"v-model="autor.name" type="text" id="name" required />
+                  </div>
+               </div>
+               <div class="mb-3 row">
+                  <label for="fortuna" class="col-sm-2 col-form-label">Fortuna:</label>
+                  <div class="col-sm-10">
+                     <input class="form-control"v-model="autor.fortuna" type="number" id="fortuna" required />
                   </div>
                </div>
                <button class="btn btn-primary" type="submit">{{ autorId ? 'Editar' : 'Crear' }}</button>
@@ -26,7 +32,7 @@ export default {
       return {
          apiUrl: process.env.VUE_APP_API_URL,
          autorId: this.$route.params.id,
-         autor: { name: '' },
+         autor: { name: '', fortuna: 0 },
       };
    },
    methods: {

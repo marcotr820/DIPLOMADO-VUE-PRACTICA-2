@@ -1,15 +1,15 @@
 {
   "autores": [
-    { "id": 1, "name": "J.K. Rowling" },
-    { "id": 2, "name": "George R.R. Martin" },
-    { "id": 3, "name": "J.R.R. Tolkien" },
-    { "id": 4, "name": "Stephen King" },
-    { "id": 5, "name": "Agatha Christie" },
-    { "id": 6, "name": "Isaac Asimov" },
-    { "id": 7, "name": "Arthur C. Clarke" },
-    { "id": 8, "name": "Orson Scott Card" },
-    { "id": 9, "name": "Frank Herbert" },
-    { "id": 10, "name": "Philip K. Dick" }
+    { "id": 1, "name": "J.K. Rowling", "fortuna": 1456925 },
+    { "id": 2, "name": "George R.R. Martin", "fortuna": 5369852 },
+    { "id": 3, "name": "J.R.R. Tolkien", "fortuna": 3652589 },
+    { "id": 4, "name": "Stephen King", "fortuna": 258963 },
+    { "id": 5, "name": "Agatha Christie", "fortuna": 589652 },
+    { "id": 6, "name": "Isaac Asimov", "fortuna": 2574569 },
+    { "id": 7, "name": "Arthur C. Clarke", "fortuna": 2541478 },
+    { "id": 8, "name": "Orson Scott Card", "fortuna": 1458975 },
+    { "id": 9, "name": "Frank Herbert", "fortuna": 250258711 },
+    { "id": 10, "name": "Philip K. Dick", "fortuna": 778541258 }
   ],
   "libros": [
     { "id": 1, "autorId": 1, "title": "Harry Potter and the Chamber of Secrets", "desc": "A thrilling adventure in the magical world of Hogwarts." },

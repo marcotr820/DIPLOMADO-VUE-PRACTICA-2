@@ -2,43 +2,58 @@
   "autores": [
     {
       "id": 1,
-      "name": "J.K. Rowling"
+      "name": "J.K. Rowling",
+      "fortuna": 1456925
     },
     {
       "id": 2,
-      "name": "George R.R. Martin"
+      "name": "George R.R. Martin",
+      "fortuna": 5369852
     },
     {
       "id": 3,
-      "name": "J.R.R. Tolkien"
+      "name": "J.R.R. Tolkien",
+      "fortuna": 3652589
     },
     {
       "id": 4,
-      "name": "Stephen King"
+      "name": "Stephen King",
+      "fortuna": 258963
     },
     {
       "id": 5,
-      "name": "Agatha Christie"
+      "name": "Agatha Christie",
+      "fortuna": 589652
     },
     {
       "id": 6,
-      "name": "Isaac Asimov"
+      "name": "Isaac Asimov",
+      "fortuna": 2574569
     },
     {
       "id": 7,
-      "name": "Arthur C. Clarke"
+      "name": "Arthur C. Clarke",
+      "fortuna": 2541478
     },
     {
       "id": 8,
-      "name": "Orson Scott Card"
+      "name": "Orson Scott Card",
+      "fortuna": 1458975
     },
     {
       "id": 9,
-      "name": "Frank Herbert"
+      "name": "Frank Herbert",
+      "fortuna": 250258711
     },
     {
       "id": 10,
-      "name": "Philip K. Dick"
+      "name": "Philip K. Dick",
+      "fortuna": 778541258
+    },
+    {
+      "name": "marco",
+      "fortuna": 500000,
+      "id": 11
     }
   ],
   "libros": [
