@@ -1,13 +1,21 @@
 <template>
    <div>
-      <h1>{{ autorId ? 'Editar autor' : 'Crear autor' }}</h1>
-      <form @submit.prevent="saveautor">
-         <label for="name">Nombre:</label>
-         <input v-model="autor.name" type="text" id="name" required />
-         <button type="submit">{{ autorId ? 'Editar' : 'Crear' }}</button>
-      </form>
+      <h1 class="mt-3">{{ autorId ? 'Editar autor' : 'Crear autor' }}</h1>
+      <div class="card">
+         <div class="card-body">
+            <form @submit.prevent="saveautor">
+               <div class="mb-3 row">
+                  <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+                  <div class="col-sm-10">
+                     <input class="form-control"v-model="autor.name" type="text" id="name" required />
+                  </div>
+               </div>
+               <button class="btn btn-primary" type="submit">{{ autorId ? 'Editar' : 'Crear' }}</button>
+            </form>
+         </div>
+      </div>
       <br>
-      <router-link to="/">Volver</router-link>
+      <router-link class="btn btn-link" to="/">Volver</router-link>
    </div>
 </template>
 

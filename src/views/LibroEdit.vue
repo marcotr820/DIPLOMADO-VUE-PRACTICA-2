@@ -1,19 +1,35 @@
 <template>
    <div>
-      <h1>{{ libroId ? 'Editar Libro' : 'Crear Libro' }}</h1>
-      <form @submit.prevent="saveLibro">
-         <label for="title">Titulo:</label>
-         <input v-model="libro.title" type="text" id="title" required />
-         <br>
-         <label for="title">Descripcion:</label>
-         <textarea name="desc" id="desc" v-model="libro.desc"></textarea>
-         <br>
-         <label for="autor">Autor:</label>
-         <select id="autor" v-model="libro.autorId" required>
-            <option v-for="autor in autores" :key="autor.id" :value="autor.id">{{ autor.name }}</option>
-         </select>
-         <button type="submit">{{ libroId ? 'Editar' : 'Crear' }}</button>
-      </form>
+      <h1 class="mt-3">{{ libroId ? 'Editar Libro' : 'Crear Libro' }}</h1>
+      <div class="card">
+         <div class="card-body">
+            <form @submit.prevent="saveLibro">
+               <div class="mb-3 row">
+                  <label for="title" class="col-sm-2 col-form-label">Titulo</label>
+                  <div class="col-sm-10">
+                     <input v-model="libro.title" class="form-control" type="text" id="title" required />
+                  </div>
+               </div>
+               <div class="mb-3 row">
+                  <label for="desc" class="col-sm-2 col-form-label">Descripcion</label>
+                  <div class="col-sm-10">
+                     <textarea name="desc" class="form-control" id="desc" v-model="libro.desc" required></textarea>
+                  </div>
+               </div>
+               <div class="mb-3 row">
+                  <label for="autor" class="col-sm-2 col-form-label">Autor</label>
+                  <div class="col-sm-10">
+                     <select class="form-select" id="autor" v-model="libro.autorId" required>
+                        <option v-for="autor in autores" :key="autor.id" :value="autor.id">{{ autor.name }}</option>
+                     </select>
+                  </div>
+               </div>
+
+               <button class="btn btn-primary" type="submit">{{ libroId ? 'Editar' : 'Crear' }}</button>
+            </form>
+         </div>
+      </div>
+
       <br>
       <router-link to="/libros">Volver</router-link>
    </div>

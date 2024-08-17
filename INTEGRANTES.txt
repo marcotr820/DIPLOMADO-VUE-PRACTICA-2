@@ -3,8 +3,8 @@ DIPLOMADO VUE - PRACTICA 2
 +++++++++++++++ PARTICIPANTES
 1. MARCO ANTONIO TICONA RIOS
 
-+++++++++++++++ LEVANTAR PROYECTO
++++++++++++++++ PASOS INICIAR PROYECTO
 1. npm install
 2. "estando en la carpeta /db" ejecutar
    # json-server --watch db.json
-3. npm run server
+3. npm run serve

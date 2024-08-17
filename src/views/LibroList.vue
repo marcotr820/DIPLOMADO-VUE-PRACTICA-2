@@ -1,10 +1,10 @@
 <template>
    <div>
-      <h1>Libros List</h1>
+      <h1 class="mt-3">Libros List</h1>
       <router-link to="/libros/create-update">Crear Libro</router-link>
-      <span>|</span>
+      <span class="mx-3"></span>
       <router-link to="/">Ver Autores</router-link>
-      <table>
+      <table class="table table-striped">
          <thead>
             <tr>
                <th>ID</th>
@@ -14,13 +14,17 @@
             </tr>
          </thead>
          <tbody>
+            <tr v-if="libros.length == 0">
+               <td colspan="4">Sin registros.</td>
+            </tr>
             <tr v-for="libro in libros" :key="libro.id">
                <td>{{ libro.id }}</td>
                <td>{{ libro.title }}</td>
                <td>{{ libro.desc }}</td>
                <td>
-                  <router-link :to="{ name: 'LibroEdit', params: { id: libro.id } }">editar</router-link>|
-                  <button @click="deleteLibro(libro.id)">Delete</button>
+                  <router-link class="btn btn-primary mx-2"
+                     :to="{ name: 'LibroEdit', params: { id: libro.id } }">editar</router-link>
+                  <button class="btn btn-danger" @click="deleteLibro(libro.id)">Delete</button>
                </td>
             </tr>
          </tbody>
